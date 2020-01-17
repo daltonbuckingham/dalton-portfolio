@@ -17,7 +17,7 @@ class Gallery extends Component {
   toggleLightbox(selectedIndex) {
     this.setState(state => ({
       lightboxIsOpen: !state.lightboxIsOpen,
-      selectedIndex,
+      selectedIndex: selectedIndex,
     }))
   }
   renderGallery(projects, allImages) {
@@ -31,22 +31,32 @@ class Gallery extends Component {
         : null
       return (
         <article className="6u 12u$(xsmall) work-item" key={i}>
-          {image ? (
+          <div class="work-item-wrapper">
             <a
-              className="image fit thumb"
+              className="work-item-link"
               href={image.publicURL || '#'}
               onClick={e => {
                 e.preventDefault()
-                this.toggleLightbox(0)
+                this.toggleLightbox(i)
               }}
             >
-              <Image filename={image.relativePath} alt={title} />
-            </a>
-          ) : null}
+              <div className="image fit thumb">
+                {image ? (
+                  <Image
+                    className="image"
+                    filename={image.relativePath}
+                    alt={title}
+                  />
+                ) : null}
+              </div>
 
-          <h3>{title}</h3>
-          <p>{excerpt}</p>
-          <p>{images ? images[0] : null}</p>
+              <div className="work-item-content">
+                <h3>{title}</h3>
+                <p>{excerpt}</p>
+                <p>{images ? images[0] : null}</p>
+              </div>
+            </a>
+          </div>
         </article>
       )
     })
@@ -69,7 +79,7 @@ class Gallery extends Component {
           {lightboxIsOpen && (
             <Modal onClose={this.toggleLightbox}>
               <Carousel
-                currentIndex={selectedIndex}
+                currentIndex={0}
                 views={
                   selectedProject &&
                   selectedProject.frontmatter &&
