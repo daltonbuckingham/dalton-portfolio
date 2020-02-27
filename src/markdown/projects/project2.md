@@ -8,4 +8,25 @@ images:
   - fulls/06.jpg
 ---
 
-Has anyone heard about GatsbyJS yet?
+This is all about my second project
+
+Another paragraph
+
+## heading 2
+
+**bold text**
+
+> Blockquote
+
+1. something
+2. something more
+
+`
+
+# code from my project
+
+`
+
+[title](https://www.example.com)
+
+![alt text](image.jpg)

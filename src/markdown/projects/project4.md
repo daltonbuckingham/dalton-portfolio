@@ -1,14 +1,14 @@
 ---
-path: '/blog/my-first-post'
-date: '2017-11-07'
-title: 'My first blog post'
+path: '/blog/my-third-post'
+date: '2018-11-07'
+title: 'My third project'
 images:
-  - fulls/01.jpg
-  - fulls/02.jpg
-  - fulls/03.jpg
+  - fulls/04.jpg
+  - fulls/05.jpg
+  - fulls/06.jpg
 ---
 
-About project 1
+This is all about my third project
 
 Another paragraph
 
