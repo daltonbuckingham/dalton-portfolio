@@ -7,8 +7,10 @@
 // You can delete this file if you're not using it
 
 const fs = require('fs-extra')
+const path = require("path")
 
 exports.onPostBuild = () => {
-  // copy file
-  fs.copySync('public', 'docs')
+  fs.renameSync(path.join(__dirname, "public"), path.join(__dirname, "docs"))
 }
+// copy file
+// fs.copySync('public', 'docs')
