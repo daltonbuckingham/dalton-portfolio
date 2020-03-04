@@ -6,18 +6,12 @@
 
 // You can delete this file if you're not using it
 
-// const fs = require('fs')
-// const path = require("path")
-
-// exports.onPostBuild = () => {
-//   fs.renameSync(path.join(__dirname, "public"), path.join(__dirname, "docs"))
-// }
-
-const fs = require('fs-extra')
+const fs = require('fs')
+const path = require("path")
 
 exports.onPostBuild = () => {
-  fs.copySync('public', 'docs')
+  // rename public to docs
+  fs.rename('public', 'docs', function (err) {
+    if (err) throw err;
+  });
 }
-
-// copy file
-// fs.copySync('public', 'docs')
