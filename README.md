@@ -1,3 +1,3 @@
 # Dalton Buckingham
 
-**npm run-script build**
+**npm run build**
