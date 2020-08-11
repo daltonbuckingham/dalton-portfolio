@@ -953,6 +953,9 @@ input[type='button'],
       h3 {
         font-size: 1em;
         margin: 0 0 (_size(element-margin) * 0.25) 0;
+        @include breakpoint(medium) {
+          font-size: 20px;
+        }
         @include vendor(
           'transition',
           'color #{_duration(transition)} ease-in-out'
@@ -960,9 +963,12 @@ input[type='button'],
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.5em;
         margin: 0;
+        @include breakpoint(medium) {
+          font-size: 16px;
+        }
       }
     }
   }

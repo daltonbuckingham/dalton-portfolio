@@ -28,7 +28,7 @@
   "scripts": {
     "prebuild": "if [ -d docs ]; then rm -r docs; fi && rm -r .cache",
     "build": "gatsby build",
-    "postbuild": "mv public docs && touch docs/CNAME && echo 'daltonbuckingham.com' > docs/CNAME",
+    "postbuild": "mv public docs && echo 'daltonbuckingham.com' > docs/CNAME",
     "dev": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,32 +1,10 @@
 ---
-path: '/blog/my-third-post'
-date: '2018-11-07'
-title: 'My third project'
+path: '/project/project-3'
+date: '2020-01-01'
+title: 'Bulk Customer Tag Manager'
 images:
-  - fulls/04.jpg
-  - fulls/05.jpg
-  - fulls/06.jpg
+  - fulls/bctm-app.jpg
 ---
+<a href="https://www.youtube.com/watch?v=4A645cuX_kg" target="_blank">Demo</a>
 
-This is all about my third project
-
-Another paragraph
-
-## heading 2
-
-**bold text**
-
-> Blockquote
-
-1. something
-2. something more
-
-`
-
-# code from my project
-
-`
-
-[title](https://www.example.com)
-
-![alt text](image.jpg)
+Shopify app I built using Ruby on Rails that pulls in all of a store's customers and allows you to easily add tags to them in bulk.

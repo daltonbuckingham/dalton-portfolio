@@ -1,32 +1,11 @@
 ---
-path: '/blog/my-first-post'
-date: '2017-11-07'
-title: 'My first blog post'
+path: '/project/project-1'
+date: '2020-01-03'
+title: 'Kite PPC Software'
 images:
-  - fulls/01.jpg
-  - fulls/02.jpg
-  - fulls/03.jpg
+  - fulls/kite-ppc-software.jpg
 ---
 
-About project 1
+<a href="http://bit.ly/kite-demo" target="_blank">Kite Demo</a>
 
-Another paragraph
-
-## heading 2
-
-**bold text**
-
-> Blockquote
-
-1. something
-2. something more
-
-`
-
-# code from my project
-
-`
-
-[title](https://www.example.com)
-
-![alt text](image.jpg)
+Built out reusable Front End modules during feature development. Built using ReactJS, Node, Express, MongoDB.

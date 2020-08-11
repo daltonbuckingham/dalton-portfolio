@@ -1,32 +1,11 @@
 ---
-path: '/blog/my-second-post'
-date: '2018-11-07'
-title: 'My second project'
+path: '/project/project-2'
+date: '2020-01-02'
+title: 'Kite Website'
 images:
-  - fulls/04.jpg
-  - fulls/05.jpg
-  - fulls/06.jpg
+  - fulls/kite-website.jpg
 ---
 
-This is all about my second project
+<a href="https://www.meetkite.com/" target="_blank">Kite Website</a>
 
-Another paragraph
-
-## heading 2
-
-**bold text**
-
-> Blockquote
-
-1. something
-2. something more
-
-`
-
-# code from my project
-
-`
-
-[title](https://www.example.com)
-
-![alt text](image.jpg)
+Contributed to initial build as well as mainting and updating after. Built using GatsbyJS.
