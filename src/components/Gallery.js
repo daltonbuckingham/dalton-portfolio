@@ -43,7 +43,7 @@ class Gallery extends Component {
 
             <div className="work-item-content">
               <h3>{title}</h3>
-              <p dangerouslySetInnerHTML={{ __html: html }}></p>
+              <div dangerouslySetInnerHTML={{ __html: html }}></div>
             </div>
           </div>
         </article >
