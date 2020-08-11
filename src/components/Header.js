@@ -8,9 +8,6 @@ class Header extends React.Component {
     return (
       <header id="header">
         <div className="inner">
-          <a href="#" className="image avatar">
-            <img src="#" alt="" />
-          </a>
         </div>
         <Footer />
       </header>
